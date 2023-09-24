@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharanya - Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(18, 18, 62);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(7, 7, 26);
+            background-position: 0%
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 18px;
+        }
+
+        nav ul li a {
+            list-style: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(66, 66, 120);
+        }
+
+        .max-width {
+            max-width: 1300px;
+            padding: 0 80px;
+            margin: auto;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(42, 42, 100);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstsection div {
+            width: 30%;
+        }
+
+        .leftsection {
+            color: white;
+            width: fit-content;
+            font-size: 2.8rem;
+            margin: 90px 0;
+            padding: 12px;
+
+        }
+
+        .leftsection .button {
+            padding: 30px 0;
+        }
+
+        .leftsection .btn {
+            font-size: 12px;
+            padding: 12px;
+            background: rgb(17, 7, 46);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .rightsection {
+            color: white;
+            width: fit-content;
+
+        }
+
+        .colour {
+            color: rgb(142, 58, 220);
+
+        }
+
+        #element {
+            color: rgb(142, 58, 220);
+        }
+
+        .about {
+            margin-top: 200px;
+            margin-bottom: 400px;
+            margin-left: 150px;
+            margin-right: 50px;
+            font-size: larger;
+        }
+
+        .Education {
+            margin-top: 300px;
+            margin-bottom: 400px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: larger;
+        }
+
+        .skills {
+            margin-top: 400px;
+            margin-bottom: 800px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: larger;
+        }
+
+        .about h1 {
+
+            font-size: 1.9rem;
+            color: rgb(249, 242, 242);
+            width: fit-content;
+            height: 20px;
+            margin-top: 200px;
+            margin-bottom: 80px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .about .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about .about-content .right {
+            width: 70%;
+
+        }
+
+        .about .about-content .right .text {
+            font-size: 25px;
+            font-weight: 500;
+            padding: 10px 30px;
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+
+        .about .about-content .right p {
+            text-align: justify;
+            font-size: larger;
+        }
+
+        .about .about-content .left {
+            width: 30%;
+
+        }
+
+        .about .about-content .left img {
+
+            height: 295px;
+            width: 295px;
+            object-fit: cover;
+            border-radius: 6px;
+
+
+        }
+        .Education .Education-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .Education h1 {
+            font-size: 1.9rem;
+            color: rgb(249, 242, 242);
+            width: fit-content;
+            height: 20px;
+            margin-top: 100px;
+            margin-bottom: 120px;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+
+        }
+    .Education .Education-content .title{
+        align-items: center;
+    }
+
+        .Education .Education-content .left{
+            width: 30%;
+        }
+
+        .Education .Education-content .right {
+            width: 70%;
+        }
+
+        .Education .Education-content .left img {
+
+            height:125px;
+            width: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .Education .Education-content .right .ed1 {
+            font-size: larger;
+            font-weight: 500;
+            padding: 10px 30px;
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+
+        .Education .Education-content .right p {
+            text-align: justify;
+            font-size: medium;
+        }
+
+        .ed1 {
+            margin-top: 200px;
+            margin-bottom: 60px;
+        }
+
+        .ed2 {
+            margin-top: 80px;
+            margin-bottom: 100px;
+        }
+
+        .ed3 {
+            margin-top: 50px;
+            margin-bottom: 80px;
+        }
+
+        .skills h1 {
+            font-size: 1.9rem;
+            color: rgb(249, 242, 242);
+            width: fit-content;
+            height: 20px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+
+        /* .about-content .text { 
+            text-align: center;
+            width: fit-content;
+            
+        /* } */
+
+
+        .contact {
+            max-width: 70vw;
+            margin: 54px;
+            height: 80vh;
+            margin-top: 400px;
+            margin-bottom: 100px;
+            margin-left: 2px;
+            margin-right: 50px;
+        }
+
+        .contact h1 {
+            font-size: 1.8rem;
+            color: rgb(249, 242, 242);
+            width: fit-content;
+            height: 20px;
+            margin-top: 300px;
+            margin-bottom: 80px;
+            margin-left: 50px;
+            margin-right: 50px;
+
+        }
+
+        .exp {
+            height: 40px;
+            margin: auto;
+            font-size: larger;
+
+        }
+
+        .ph {
+            height: 40px;
+            margin: auto;
+            font-size: larger;
+
+        }
+
+        .li {
+            height: 40px;
+            margin: auto;
+            font-size: larger;
+
+        }
+
+        .rights {
+            text-align: center;
+            padding: 12px 0;
+            color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <haeder>
+        <nav>
+            <div class="left">PORTFOLIO</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#Education" class="menu-btn">Education</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </haeder>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="colour">Sharanya</span> and I am a passionate
+                <span id="element"></span>
+
+                
+            </div>
+            <div class="rightsection">
+                <img src="fg.webp" alt="">
+
+            </div>
+
+        </section>
+        <hr>
+        <section class="about" id="about">
+
+            <div class="max-width"></div>
+            <h1 class="title">About me</h1>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="s2.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Sharanya and I'm AIML engineering student. </div>
+                    <p>Aspiring computer science student passionate about leveraging technology to drive innovation and
+                        solve problems. Currently pursuing B.Tech in Computer Science, with a focus on artificial
+                        intelligence and machine learning.I'm a 7th Semester student in M S Ramiah University of Applied
+                        Sciences. What sets me apart is my eagerness to learn and adapt to emerging technologies. As a
+                        proactive learner, I actively seek opportunities to apply my skills and contribute to real-world
+                        projects.My hobbies includes Drawing in my free time,Exploring new musics,watching movies in
+                        different languages.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Education" id="Education">
+            <div class="max-width">
+                <h1 class="title">My Education</h1>
+                <div class="Education-content">
+                    <div class="column left">
+                        <img src="school.jpg" alt="">
+                        <div>
+                        <img src="clg.png" alt=""></div>
+                        <div>
+                        <img src="uni.webp" alt=""></div>
+                    </div>
+
+                    <div class="column right">
+
+                        <div class='ed1'>
+                            <li>10th state | Stella Maris High School Tiptur, Tumkur, India |94.08%</li>
+                            <p>I did my high school in stella maris high school.this is the stage where i learnt about
+                                being
+                                responsilble and ambitious.School is not only about studies,I really enjoyed my school
+                                days in
+                                participating in different activites such as sports,dance,band set and contesting in
+                                school
+                                elections.this is the place where i made a ton of good memories.</p>
+                        </div>
+                        <div class="ed2">
+                            <li>12th Karnataka State Board | Narayana PU College - Banglore, India| 90.5%</li>
+                            <p>After complition of my secondary school education,I continued my next step in Narayana
+                                Pre
+                                University in Bengaluru.I did my PCMB in this college.The experience of the two years
+                                journey in
+                                this college is very valuable.This is the stage which determines the path for the next
+                                journey
+                                in education field,and with help of the teachers and staff i learnt alot.</p>
+                        </div>
+                        <div class="ed3">
+                            <li>Bachelor of Technology: Artificial Intelligence and Machine Learning | M S Ramaiah
+                                University of Applied Sciences - Bangalore, India | 8.7 CGPA (as of now) </li>
+                            <p>After complition of Pre-University ,I choose to continue my studies in the field of
+                                compurter
+                                science.As computer science is the most famous domain and nowadays Artificial
+                                Intelligence and
+                                Machine Learning is growing in a qiuck pase.I'm Currently pursuing bachelore of
+                                technology in
+                                Artificial Intelligence and Machine Learning in M S Ramaiah University of Applied
+                                Sciences.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h1 class="title">My skills</h1>
+                <div class="skills-content">
+                    <div class="column left">
+                        <div class="text">My creative skills & experiences are as follows:</div>
+                        <div class="skills-list">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>MySql</li>
+                            <li>Deep Neural Networks</li>
+                            <li>Machine Learning</li>
+                            <li>JavaScript</li>
+                            <li>Natural Language Processing </li>
+                            <li>Data Mining </li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Computer Image Processing </li>
+
+
+
+                        </div>
+                        </secttion>
+
+                        <section class="contact" id="contact">
+                            <div class="max-width">
+                                <h1 class="title">Contact</h1>
+                                <div class="box">
+                                    <div class="exp">Email : sharanyaramesh999@gmail.com</div>
+                                    <div class="ph">Phone number : +91 8217426676</div>
+                                    <div class="li">LinkedIn :
+                                        "https://www.linkedin.com/in/sharanya-n-ramesh-987001267/"
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <footer class="rights">
+                            Copyright &copy; Sharanya's Portfolio | All Rights Reserved!
+                        </footer>
+
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['AIML engineering student'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
